@@ -1,0 +1,32 @@
+#Places Index
+
+GET http://localhost:3000/places
+
+###
+
+POST http://localhost:3000/places
+Content-Type: application/json
+
+{
+  "name": "New place",
+  "address": "123 Easy Street"
+}
+
+###
+
+GET http://localhost:3000/places/7
+
+###
+
+PATCH http://localhost:3000/places/2
+Content-Type: application/json
+
+{
+  "name": "Grandma and Grandpa's House"
+}
+
+###
+
+DELETE http://localhost:3000/places/7
+
+###
